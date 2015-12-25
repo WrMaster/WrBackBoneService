@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- jQuery -->
+    <script type="text/javascript" src="Scripts/jquery-1.6.2.min.js" ></script>
+    <!-- jQuery UI -->
+    <link href="css/jquery-ui.css"  media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-ui.js" ></script>
+    <script type="text/javascript" src="Scripts/jquery.ptags.min.js"></script>
+
+    <link href="css/jquery.ptags.default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <input type="button" id="btn" value="Hit" onclick="changeIntoTag();" />
+    <input type="text" id="tTag" style="display: none;" />
+
+</body>
+<script language="javascript" type="text/javascript">
+    //$(document).ready(function () {
+    //    //alert('hi');
+
+    //});
+    function changeIntoTag() {
+        $("#tTag").ptags();
+        $('#tTag').ptags_add('Random Number: ' + Math.random())
+        //$('#tTag').ptags_add(['test1', 'test2', 'test3']);
+        //        alert($("#tTag").val());
+    }
+</script>
+
+</html>
